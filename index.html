@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "pastel-mint": "#B2F2BB",
+            "pastel-pink": "#FFD6E0",
+            "pastel-lavender": "#E0CEFF",
+            "pastel-blue": "#D0EBFF",
+            "charcoal": "#1A1A1A",
+            "deep-charcoal": "#0D0D0D",
+            "off-white": "#F8F9FA",
+            "light-grey": "#E9ECEF",
+          },
+          fontFamily: {
+            "pixel": ["'Press Start 2P'", "cursive"]
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .crt-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: linear-gradient(rgba(255,255,255,0) 50%, rgba(0,0,0,0.02) 50%),
+                    linear-gradient(90deg, rgba(255,0,0,0.005), rgba(0,255,0,0.005), rgba(0,0,255,0.005));
+        z-index: 100;
+        background-size: 100% 3px, 3px 100%;
+        pointer-events: none;
+      }
+      .pixel-border-mint {
+        box-shadow: 0 -4px 0 0 #B2F2BB, 0 4px 0 0 #B2F2BB, -4px 0 0 0 #B2F2BB, 4px 0 0 0 #B2F2BB;
+      }
+      .pixel-border-pink {
+        box-shadow: 0 -4px 0 0 #FFD6E0, 0 4px 0 0 #FFD6E0, -4px 0 0 0 #FFD6E0, 4px 0 0 0 #FFD6E0;
+      }
+      .pixel-border-lavender {
+        box-shadow: 0 -4px 0 0 #E0CEFF, 0 4px 0 0 #E0CEFF, -4px 0 0 0 #E0CEFF, 4px 0 0 0 #E0CEFF;
+      }
+      .title-3d-shadow {
+        color: theme('colors.charcoal');
+        text-shadow: 3px 3px 0px #FFD6E0, 6px 6px 0px #B2F2BB;
+        -webkit-text-stroke: 1px theme('colors.deep-charcoal');
+      }
+      .game-card {
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .game-card:active .card-image {
+        transform: scale(0.97);
+      }
+      .game-card:hover .card-image {
+        transform: scale(1.03);
+      }
+      .card-image {
+        transition: transform 0.15s ease;
+      }
+    }
+  </style>
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      min-height: 100dvh;
+      image-rendering: pixelated;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    h1, h2, p {
+      word-break: break-word;
+    }
+  </style>
+  <title>DAX'S ARCADE</title>
+</head>
+<body class="bg-off-white font-pixel text-deep-charcoal antialiased selection:bg-pastel-mint">
+
+<div class="crt-overlay"></div>
+
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden px-3 py-0 sm:px-6">
+
+  <!-- HEADER -->
+  <header class="py-8 sm:py-12 text-center">
+    <h1 class="text-2xl sm:text-4xl md:text-5xl font-black tracking-tighter uppercase title-3d-shadow leading-[1.3] px-2">
+      DAX'S<br/>ARCADE
+    </h1>
+    <p class="text-[8px] sm:text-[10px] text-deep-charcoal mt-6 sm:mt-10 font-bold tracking-[0.2em]">
+      INSERT COIN TO START
+    </p>
+  </header>
+
+  <main class="flex-1 space-y-10 sm:space-y-12">
+
+    <!-- TRENDING GAMES -->
+    <section>
+      <div class="flex items-center justify-between mb-6 sm:mb-8 border-b-4 border-pastel-pink pb-3">
+        <h2 class="text-[10px] sm:text-[12px] text-deep-charcoal font-black flex items-center gap-2">
+          <span class="material-symbols-outlined !text-lg sm:!text-xl text-deep-charcoal">bolt</span>
+          TRENDING_GAMES
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 min-[360px]:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-12 px-1">
+
+        <!-- FLIP 7 -->
+        <a href="https://dax-den-flip-7.vercel.app/" class="game-card relative group">
+          <div class="aspect-[3/4] pixel-border-mint bg-light-grey overflow-hidden relative">
+            <div class="absolute top-0 right-0 z-20 bg-charcoal text-pastel-pink text-[7px] sm:text-[8px] p-1 px-2 font-bold">HOT</div>
+            <div class="card-image w-full h-full flex items-center justify-center" style="background-color: #FFE135;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 135" width="85%" height="85%" shape-rendering="crispEdges">
+                <rect x="20" y="10" width="60" height="10" fill="#0D0D0D"/>
+                <rect x="70" y="20" width="10" height="30" fill="#0D0D0D"/>
+                <rect x="55" y="50" width="10" height="10" fill="#0D0D0D"/>
+                <rect x="45" y="60" width="10" height="10" fill="#0D0D0D"/>
+                <rect x="40" y="70" width="10" height="30" fill="#0D0D0D"/>
+                <text x="50" y="125" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="13" fill="#0D0D0D" letter-spacing="2">FLIP</text>
+              </svg>
+            </div>
+          </div>
+          <div class="mt-3 sm:mt-5">
+            <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">FLIP 7</p>
+            <p class="text-[7px] sm:text-[8px] text-white bg-deep-charcoal inline-block px-1.5 py-0.5 mt-1.5 sm:mt-2 font-bold">CARD GAME</p>
+          </div>
+        </a>
+
+        <!-- ONE NIGHT WEREWOLF -->
+        <a href="https://your-onuw-url.com" class="game-card relative group">
+          <div class="aspect-[3/4] pixel-border-lavender bg-light-grey overflow-hidden relative">
+            <div class="absolute top-0 right-0 z-20 bg-charcoal text-pastel-lavender text-[7px] sm:text-[8px] p-1 px-2 italic font-bold">NEW</div>
+            <div class="card-image w-full h-full bg-cover bg-center" style="background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/7b31ef03-032d-44c9-8045-d49717bca056.png'); background-color: #0D0D0D;"></div>
+          </div>
+          <div class="mt-3 sm:mt-5">
+            <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">ONE NIGHT WEREWOLF</p>
+            <p class="text-[7px] sm:text-[8px] text-white bg-deep-charcoal inline-block px-1.5 py-0.5 mt-1.5 sm:mt-2 font-bold">SOCIAL</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ALL ARCADE -->
+    <section class="pb-10">
+      <div class="flex items-center justify-between mb-6 sm:mb-8 border-b-4 border-pastel-mint pb-3">
+        <h2 class="text-[10px] sm:text-[12px] text-deep-charcoal font-black flex items-center gap-2">
+          <span class="material-symbols-outlined !text-lg sm:!text-xl text-deep-charcoal">grid_view</span>
+          ALL_ARCADE
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 min-[360px]:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-12 px-1">
+
+        <!-- CODENAMES -->
+        <a href="https://codenames.game/" class="game-card relative group">
+          <div class="aspect-[3/4] pixel-border-pink bg-light-grey overflow-hidden relative">
+            <div class="card-image w-full h-full bg-cover bg-center" style="background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/6f791b7d-0aec-432e-b4d6-fe84812708cb.png');"></div>
+          </div>
+          <div class="mt-3 sm:mt-5">
+            <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">CODENAMES</p>
+            <p class="text-[7px] sm:text-[8px] text-deep-charcoal font-bold mt-1.5 sm:mt-2 uppercase border-l-4 border-pastel-pink pl-2">STRATEGY</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-8 sm:py-12 text-center border-t-4 border-deep-charcoal">
+    <p class="text-[7px] sm:text-[8px] text-deep-charcoal font-bold uppercase tracking-widest mb-4 sm:mb-6">
+      © 198X DAX ARCADE SYSTEMS CORP
+    </p>
+    <div class="flex justify-center gap-3 sm:gap-4 flex-wrap">
+      <p class="text-[7px] sm:text-[8px] text-pastel-pink bg-deep-charcoal px-3 py-1.5 font-bold">HI-SCORE: 999,999</p>
+      <p class="text-[7px] sm:text-[8px] text-pastel-mint bg-deep-charcoal px-3 py-1.5 font-bold">CREDITS: 04</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
