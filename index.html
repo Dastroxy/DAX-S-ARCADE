@@ -52,6 +52,9 @@
       .pixel-border-red {
         box-shadow: 0 -4px 0 0 #FF6B6B, 0 4px 0 0 #FF6B6B, -4px 0 0 0 #FF6B6B, 4px 0 0 0 #FF6B6B;
       }
+      .pixel-border-teal {
+        box-shadow: 0 -4px 0 0 #4CAF50, 0 4px 0 0 #4CAF50, -4px 0 0 0 #4CAF50, 4px 0 0 0 #4CAF50;
+      }
       .title-3d-shadow {
         color: theme('colors.charcoal');
         text-shadow: 3px 3px 0px #FFD6E0, 6px 6px 0px #B2F2BB;
@@ -64,15 +67,9 @@
         color: inherit;
         -webkit-tap-highlight-color: transparent;
       }
-      .game-card:active .card-image {
-        transform: scale(0.97);
-      }
-      .game-card:hover .card-image {
-        transform: scale(1.03);
-      }
-      .card-image {
-        transition: transform 0.15s ease;
-      }
+      .game-card:active .card-image { transform: scale(0.97); }
+      .game-card:hover .card-image  { transform: scale(1.03); }
+      .card-image { transition: transform 0.15s ease; }
     }
   </style>
   <style>
@@ -116,10 +113,10 @@
       <div class="grid grid-cols-1 min-[360px]:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-12 px-1">
 
         <!-- FLIP 7 -->
-        <a href="https://dax-den-flip-7.vercel.app/" class="game-card relative group">
+        <a href="https://your-flip7-url.com" class="game-card relative group">
           <div class="aspect-[3/4] pixel-border-mint bg-light-grey overflow-hidden relative">
             <div class="absolute top-0 right-0 z-20 bg-charcoal text-pastel-pink text-[7px] sm:text-[8px] p-1 px-2 font-bold">HOT</div>
-            <div class="card-image w-full h-full flex items-center justify-center" style="background-color: #FFE135;">
+            <div class="card-image w-full h-full flex items-center justify-center" style="background-color:#FFE135;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 135" width="85%" height="85%" shape-rendering="crispEdges">
                 <rect x="20" y="10" width="60" height="10" fill="#0D0D0D"/>
                 <rect x="70" y="20" width="10" height="30" fill="#0D0D0D"/>
@@ -137,10 +134,10 @@
         </a>
 
         <!-- ONE NIGHT WEREWOLF -->
-        <a href="https://onuw-finsl.vercel.app/" class="game-card relative group">
+        <a href="https://your-onuw-url.com" class="game-card relative group">
           <div class="aspect-[3/4] pixel-border-lavender bg-light-grey overflow-hidden relative">
             <div class="absolute top-0 right-0 z-20 bg-charcoal text-pastel-lavender text-[7px] sm:text-[8px] p-1 px-2 italic font-bold">NEW</div>
-            <div class="card-image w-full h-full bg-cover bg-center" style="background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/7b31ef03-032d-44c9-8045-d49717bca056.png'); background-color: #0D0D0D;"></div>
+            <div class="card-image w-full h-full bg-cover bg-center" style="background-image:url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/7b31ef03-032d-44c9-8045-d49717bca056.png');background-color:#0D0D0D;"></div>
           </div>
           <div class="mt-3 sm:mt-5">
             <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">ONE NIGHT WEREWOLF</p>
@@ -148,6 +145,32 @@
           </div>
         </a>
 
+       <!-- CHAMELEON -->
+<a href="https://your-chameleon-url.com" class="game-card relative group">
+  <div class="aspect-[3/4] pixel-border-teal bg-light-grey overflow-hidden relative">
+    <div class="absolute top-0 right-0 z-20 bg-charcoal text-pastel-mint text-[7px] sm:text-[8px] p-1 px-2 font-bold">HOT</div>
+    <div class="card-image w-full h-full flex items-center justify-center" style="
+      background-image:
+        linear-gradient(45deg,#4CAF50 25%,transparent 25%),
+        linear-gradient(-45deg,#4CAF50 25%,transparent 25%),
+        linear-gradient(45deg,transparent 75%,#4CAF50 75%),
+        linear-gradient(-45deg,transparent 75%,#4CAF50 75%);
+      background-size:20px 20px;
+      background-position:0 0,0 10px,10px -10px,-10px 0;
+      background-color:#0096C7;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 30" width="95%" shape-rendering="crispEdges">
+        <!-- drop shadow -->
+        <text x="57" y="22" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="9" fill="#000000" opacity="0.4">CHAMELEON</text>
+        <!-- main white text -->
+        <text x="55" y="20" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="10" fill="#FFFFFF">CHAMELEON</text>
+      </svg>      
+    </div>
+  </div>
+  <div class="mt-3 sm:mt-5">
+    <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">CHAMELEON</p>
+    <p class="text-[7px] sm:text-[8px] text-white bg-deep-charcoal inline-block px-1.5 py-0.5 mt-1.5 sm:mt-2 font-bold">BLUFFING</p>
+  </div>
+</a>
       </div>
     </section>
 
@@ -162,9 +185,9 @@
       <div class="grid grid-cols-1 min-[360px]:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-12 px-1">
 
         <!-- CODENAMES -->
-        <a href="https://codenames.game/" class="game-card relative group">
+        <a href="https://your-codenames-url.com" class="game-card relative group">
           <div class="aspect-[3/4] pixel-border-pink bg-light-grey overflow-hidden relative">
-            <div class="card-image w-full h-full bg-cover bg-center" style="background-image: url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/6f791b7d-0aec-432e-b4d6-fe84812708cb.png');"></div>
+            <div class="card-image w-full h-full bg-cover bg-center" style="background-image:url('https://user-gen-media-assets.s3.amazonaws.com/gemini_images/6f791b7d-0aec-432e-b4d6-fe84812708cb.png');"></div>
           </div>
           <div class="mt-3 sm:mt-5">
             <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">CODENAMES</p>
@@ -172,37 +195,31 @@
           </div>
         </a>
 
-       <!-- SECRET HITLER -->
-<a href="https://secret-hitler.online/" class="game-card relative group">
-  <div class="aspect-[3/4] pixel-border-red bg-light-grey overflow-hidden relative">
-    <div class="card-image w-full h-full flex items-center justify-center px-3" style="background-color: #E9ECEF;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 130" width="100%" height="100%" shape-rendering="crispEdges">
-
-        <!-- Drop shadow layer — offset 4px right, 4px down -->
-        <text x="59" y="39"  text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#555555" letter-spacing="0">SECRET</text>
-        <text x="59" y="64"  text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#555555" letter-spacing="0">HITLER</text>
-
-        <!-- Main black text on top -->
-        <text x="55" y="35"  text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#0D0D0D" letter-spacing="0">SECRET</text>
-        <text x="55" y="60"  text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#0D0D0D" letter-spacing="0">HITLER</text>
-
-        <!-- Pixel divider -->
-        <rect x="15" y="72" width="80" height="3" fill="#0D0D0D"/>
-
-        <!-- Subtitle -->
-        <text x="55" y="90"  text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="6" fill="#0D0D0D" letter-spacing="1">A GAME OF</text>
-        <text x="55" y="103" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="6" fill="#0D0D0D" letter-spacing="1">FASCISM &amp;</text>
-        <text x="55" y="116" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="6" fill="#0D0D0D" letter-spacing="1">DECEPTION</text>
-
-      </svg>
-    </div>
-  </div>
-  <div class="mt-3 sm:mt-5">
-    <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">SECRET HITLER</p>
-    <p class="text-[7px] sm:text-[8px] text-deep-charcoal font-bold mt-1.5 sm:mt-2 uppercase border-l-4 border-[#FF6B6B] pl-2">SOCIAL</p>
-  </div>
-</a>
-
+        <!-- SECRET HITLER -->
+        <a href="https://your-secrethitler-url.com" class="game-card relative group">
+          <div class="aspect-[3/4] pixel-border-red bg-light-grey overflow-hidden relative">
+            <div class="card-image w-full h-full flex items-center justify-center px-3" style="background-color:#E9ECEF;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 130" width="100%" height="100%" shape-rendering="crispEdges">
+                <!-- Drop shadow -->
+                <text x="59" y="39" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#555555">SECRET</text>
+                <text x="59" y="64" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#555555">HITLER</text>
+                <!-- Main text -->
+                <text x="55" y="35" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#0D0D0D">SECRET</text>
+                <text x="55" y="60" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="14" fill="#0D0D0D">HITLER</text>
+                <!-- Divider -->
+                <rect x="15" y="72" width="80" height="3" fill="#0D0D0D"/>
+                <!-- Subtitle -->
+                <text x="55" y="90"  text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="6" fill="#0D0D0D" letter-spacing="1">A GAME OF</text>
+                <text x="55" y="103" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="6" fill="#0D0D0D" letter-spacing="1">FASCISM &amp;</text>
+                <text x="55" y="116" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="6" fill="#0D0D0D" letter-spacing="1">DECEPTION</text>
+              </svg>
+            </div>
+          </div>
+          <div class="mt-3 sm:mt-5">
+            <p class="text-[10px] sm:text-[11px] font-black text-deep-charcoal leading-tight uppercase">SECRET HITLER</p>
+            <p class="text-[7px] sm:text-[8px] text-deep-charcoal font-bold mt-1.5 sm:mt-2 uppercase border-l-4 border-[#FF6B6B] pl-2">SOCIAL</p>
+          </div>
+        </a>
 
       </div>
     </section>
@@ -223,5 +240,3 @@
 </div>
 </body>
 </html>
-
-
