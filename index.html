@@ -410,208 +410,125 @@
     <div class="card-image w-full h-full">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" width="100%" height="100%" shape-rendering="crispEdges">
 
-        <!-- BACKGROUND -->
-        <rect width="120" height="160" fill="#2D6A2D"/>
+        <!-- FRESH GREEN BACKGROUND -->
+        <rect width="120" height="160" fill="#4CAF50"/>
+        <rect x="0"  y="0"  width="60" height="80" fill="#43A047" opacity="0.3"/>
+        <rect x="60" y="80" width="60" height="80" fill="#43A047" opacity="0.3"/>
 
-        <!-- =============================================
-             VEGGIE GRID: 4 cols x 5 rows, cell = 28x28
-             Veggies cycle: carrot, broccoli, tomato, onion, pepper, corn
-             ============================================= -->
+        <!-- BOWL SHADOW -->
+        <rect x="24" y="42" width="74" height="6"  fill="#1B5E20" opacity="0.25"/>
+        <rect x="20" y="46" width="82" height="50" fill="#1B5E20" opacity="0.2"/>
+        <rect x="24" y="96" width="74" height="6"  fill="#1B5E20" opacity="0.25"/>
 
-        <!-- ROW 1: y=6 -->
-        <!-- [0,0] CARROT -->
-        <g transform="translate(6,6)">
-          <rect x="6" y="0" width="2" height="4" fill="#228B22"/>
-          <rect x="4" y="0" width="2" height="3" fill="#228B22"/>
-          <rect x="8" y="0" width="2" height="3" fill="#228B22"/>
-          <rect x="4" y="4" width="8" height="3" fill="#FF6600"/>
-          <rect x="5" y="7" width="6" height="3" fill="#FF6600"/>
-          <rect x="6" y="10" width="4" height="3" fill="#FF7700"/>
-          <rect x="7" y="13" width="2" height="3" fill="#FF8800"/>
-          <rect x="5" y="5" width="3" height="2" fill="#FF8833" opacity="0.6"/>
-        </g>
-        <!-- [1,0] BROCCOLI -->
-        <g transform="translate(34,6)">
-          <rect x="5" y="8" width="4" height="8" fill="#5D8A2E"/>
-          <rect x="2" y="2" width="6" height="6" fill="#2ECC40"/>
-          <rect x="8" y="2" width="6" height="6" fill="#27AE60"/>
-          <rect x="0" y="4" width="16" height="5" fill="#2ECC40"/>
-          <rect x="2" y="0" width="5" height="4" fill="#3DDC55"/>
-          <rect x="9" y="0" width="5" height="4" fill="#3DDC55"/>
-          <rect x="5" y="3" width="6" height="3" fill="#3DDC55"/>
-          <rect x="3" y="5" width="4" height="2" fill="#5AEE6E" opacity="0.5"/>
-        </g>
-        <!-- [2,0] TOMATO -->
-        <g transform="translate(62,6)">
-          <rect x="4" y="0" width="3" height="3" fill="#228B22"/>
-          <rect x="9" y="0" width="3" height="3" fill="#228B22"/>
-          <rect x="6" y="1" width="4" height="2" fill="#228B22"/>
-          <rect x="2" y="3" width="12" height="2" fill="#CC2200"/>
-          <rect x="0" y="5" width="16" height="6" fill="#DD2200"/>
-          <rect x="2" y="11" width="12" height="4" fill="#CC2200"/>
-          <rect x="4" y="6" width="5" height="3" fill="#FF4422" opacity="0.4"/>
-        </g>
-        <!-- [3,0] ONION -->
-        <g transform="translate(90,6)">
-          <rect x="6" y="0" width="4" height="3" fill="#228B22"/>
-          <rect x="4" y="2" width="8" height="2" fill="#CC99FF"/>
-          <rect x="2" y="4" width="12" height="6" fill="#DDB8FF"/>
-          <rect x="0" y="6" width="16" height="5" fill="#CC99FF"/>
-          <rect x="2" y="11" width="12" height="3" fill="#DDB8FF"/>
-          <rect x="4" y="5" width="5" height="3" fill="#EED5FF" opacity="0.5"/>
-        </g>
+        <!-- BOWL OUTER RIM -->
+        <rect x="36" y="34" width="50" height="4"  fill="#5D4037"/>
+        <rect x="26" y="38" width="70" height="4"  fill="#5D4037"/>
+        <rect x="18" y="42" width="86" height="4"  fill="#5D4037"/>
+        <rect x="14" y="46" width="94" height="4"  fill="#5D4037"/>
+        <rect x="12" y="50" width="98" height="4"  fill="#5D4037"/>
+        <rect x="12" y="50" width="98" height="44" fill="#5D4037"/>
+        <rect x="12" y="94" width="98" height="4"  fill="#5D4037"/>
+        <rect x="14" y="98" width="94" height="4"  fill="#5D4037"/>
+        <rect x="18" y="102" width="86" height="4" fill="#5D4037"/>
+        <rect x="26" y="106" width="70" height="4" fill="#5D4037"/>
+        <rect x="36" y="110" width="50" height="4" fill="#5D4037"/>
 
-        <!-- ROW 2: y=36 -->
-        <!-- [0,1] PEPPER -->
-        <g transform="translate(6,36)">
-          <rect x="6" y="0" width="4" height="3" fill="#228B22"/>
-          <rect x="5" y="2" width="6" height="2" fill="#228B22"/>
-          <rect x="3" y="4" width="5" height="10" fill="#FF2200"/>
-          <rect x="8" y="4" width="5" height="10" fill="#DD1100"/>
-          <rect x="2" y="6" width="12" height="6" fill="#FF2200"/>
-          <rect x="3" y="14" width="5" height="3" fill="#FF2200"/>
-          <rect x="8" y="14" width="4" height="3" fill="#DD1100"/>
-          <rect x="4" y="6" width="3" height="4" fill="#FF5533" opacity="0.5"/>
-        </g>
-        <!-- [1,1] CORN -->
-        <g transform="translate(34,36)">
-          <rect x="5" y="0" width="3" height="4" fill="#228B22"/>
-          <rect x="8" y="0" width="3" height="3" fill="#228B22"/>
-          <rect x="3" y="4" width="10" height="12" fill="#FFD700"/>
-          <rect x="4" y="16" width="8" height="2"  fill="#FFD700"/>
-          <!-- kernels -->
-          <rect x="4" y="5"  width="2" height="2" fill="#FFC200"/>
-          <rect x="7" y="5"  width="2" height="2" fill="#FFC200"/>
-          <rect x="10" y="5" width="2" height="2" fill="#FFC200"/>
-          <rect x="4" y="8"  width="2" height="2" fill="#FFC200"/>
-          <rect x="7" y="8"  width="2" height="2" fill="#FFC200"/>
-          <rect x="10" y="8" width="2" height="2" fill="#FFC200"/>
-          <rect x="4" y="11" width="2" height="2" fill="#FFC200"/>
-          <rect x="7" y="11" width="2" height="2" fill="#FFC200"/>
-          <rect x="10" y="11" width="2" height="2" fill="#FFC200"/>
-          <rect x="5" y="0"  width="6" height="2" fill="#5DA832"/>
-        </g>
-        <!-- [2,1] CARROT -->
-        <g transform="translate(62,36)">
-          <rect x="6" y="0" width="2" height="4" fill="#228B22"/>
-          <rect x="4" y="0" width="2" height="3" fill="#228B22"/>
-          <rect x="8" y="0" width="2" height="3" fill="#228B22"/>
-          <rect x="4" y="4" width="8" height="3" fill="#FF6600"/>
-          <rect x="5" y="7" width="6" height="3" fill="#FF6600"/>
-          <rect x="6" y="10" width="4" height="3" fill="#FF7700"/>
-          <rect x="7" y="13" width="2" height="3" fill="#FF8800"/>
-          <rect x="5" y="5" width="3" height="2" fill="#FF8833" opacity="0.6"/>
-        </g>
-        <!-- [3,1] BROCCOLI -->
-        <g transform="translate(90,36)">
-          <rect x="5" y="8" width="4" height="8" fill="#5D8A2E"/>
-          <rect x="2" y="2" width="6" height="6" fill="#2ECC40"/>
-          <rect x="8" y="2" width="6" height="6" fill="#27AE60"/>
-          <rect x="0" y="4" width="16" height="5" fill="#2ECC40"/>
-          <rect x="2" y="0" width="5" height="4" fill="#3DDC55"/>
-          <rect x="9" y="0" width="5" height="4" fill="#3DDC55"/>
-          <rect x="5" y="3" width="6" height="3" fill="#3DDC55"/>
-          <rect x="3" y="5" width="4" height="2" fill="#5AEE6E" opacity="0.5"/>
-        </g>
+        <!-- RIM HIGHLIGHT -->
+        <rect x="36" y="34" width="50" height="2"  fill="#A1887F"/>
+        <rect x="26" y="38" width="70" height="2"  fill="#A1887F"/>
+        <rect x="18" y="42" width="86" height="2"  fill="#A1887F"/>
+        <rect x="14" y="46" width="94" height="2"  fill="#A1887F"/>
 
-        <!-- ROW 3: y=66 -->
-        <!-- [0,2] TOMATO -->
-        <g transform="translate(6,66)">
-          <rect x="4" y="0" width="3" height="3" fill="#228B22"/>
-          <rect x="9" y="0" width="3" height="3" fill="#228B22"/>
-          <rect x="6" y="1" width="4" height="2" fill="#228B22"/>
-          <rect x="2" y="3" width="12" height="2" fill="#CC2200"/>
-          <rect x="0" y="5" width="16" height="6" fill="#DD2200"/>
-          <rect x="2" y="11" width="12" height="4" fill="#CC2200"/>
-          <rect x="4" y="6" width="5" height="3" fill="#FF4422" opacity="0.4"/>
-        </g>
-        <!-- [1,2] ONION -->
-        <g transform="translate(34,66)">
-          <rect x="6" y="0" width="4" height="3" fill="#228B22"/>
-          <rect x="4" y="2" width="8" height="2" fill="#CC99FF"/>
-          <rect x="2" y="4" width="12" height="6" fill="#DDB8FF"/>
-          <rect x="0" y="6" width="16" height="5" fill="#CC99FF"/>
-          <rect x="2" y="11" width="12" height="3" fill="#DDB8FF"/>
-          <rect x="4" y="5" width="5" height="3" fill="#EED5FF" opacity="0.5"/>
-        </g>
-        <!-- [2,2] PEPPER -->
-        <g transform="translate(62,66)">
-          <rect x="6" y="0" width="4" height="3" fill="#228B22"/>
-          <rect x="5" y="2" width="6" height="2" fill="#228B22"/>
-          <rect x="3" y="4" width="5" height="10" fill="#FF2200"/>
-          <rect x="8" y="4" width="5" height="10" fill="#DD1100"/>
-          <rect x="2" y="6" width="12" height="6" fill="#FF2200"/>
-          <rect x="3" y="14" width="5" height="3" fill="#FF2200"/>
-          <rect x="8" y="14" width="4" height="3" fill="#DD1100"/>
-          <rect x="4" y="6" width="3" height="4" fill="#FF5533" opacity="0.5"/>
-        </g>
-        <!-- [3,2] CORN -->
-        <g transform="translate(90,66)">
-          <rect x="5" y="0" width="3" height="4" fill="#228B22"/>
-          <rect x="8" y="0" width="3" height="3" fill="#228B22"/>
-          <rect x="3" y="4" width="10" height="12" fill="#FFD700"/>
-          <rect x="4" y="16" width="8" height="2"  fill="#FFD700"/>
-          <rect x="4" y="5"  width="2" height="2" fill="#FFC200"/>
-          <rect x="7" y="5"  width="2" height="2" fill="#FFC200"/>
-          <rect x="10" y="5" width="2" height="2" fill="#FFC200"/>
-          <rect x="4" y="8"  width="2" height="2" fill="#FFC200"/>
-          <rect x="7" y="8"  width="2" height="2" fill="#FFC200"/>
-          <rect x="10" y="8" width="2" height="2" fill="#FFC200"/>
-          <rect x="4" y="11" width="2" height="2" fill="#FFC200"/>
-          <rect x="7" y="11" width="2" height="2" fill="#FFC200"/>
-          <rect x="10" y="11" width="2" height="2" fill="#FFC200"/>
-          <rect x="5" y="0"  width="6" height="2" fill="#5DA832"/>
-        </g>
+        <!-- BOWL INNER (cream base) -->
+        <rect x="42" y="40"  width="38" height="4"  fill="#FFFFF0"/>
+        <rect x="32" y="44"  width="58" height="4"  fill="#FFFFF0"/>
+        <rect x="22" y="48"  width="78" height="4"  fill="#FFFFF0"/>
+        <rect x="16" y="52"  width="90" height="44" fill="#FFFFF0"/>
+        <rect x="22" y="96"  width="78" height="4"  fill="#FFFFF0"/>
+        <rect x="32" y="100" width="58" height="4"  fill="#FFFFF0"/>
+        <rect x="42" y="104" width="38" height="4"  fill="#FFFFF0"/>
 
-        <!-- ROW 4: y=96 -->
-        <!-- [0,3] BROCCOLI -->
-        <g transform="translate(6,96)">
-          <rect x="5" y="8" width="4" height="8" fill="#5D8A2E"/>
-          <rect x="2" y="2" width="6" height="6" fill="#2ECC40"/>
-          <rect x="8" y="2" width="6" height="6" fill="#27AE60"/>
-          <rect x="0" y="4" width="16" height="5" fill="#2ECC40"/>
-          <rect x="2" y="0" width="5" height="4" fill="#3DDC55"/>
-          <rect x="9" y="0" width="5" height="4" fill="#3DDC55"/>
-          <rect x="5" y="3" width="6" height="3" fill="#3DDC55"/>
-          <rect x="3" y="5" width="4" height="2" fill="#5AEE6E" opacity="0.5"/>
-        </g>
-        <!-- [1,3] CARROT -->
-        <g transform="translate(34,96)">
-          <rect x="6" y="0" width="2" height="4" fill="#228B22"/>
-          <rect x="4" y="0" width="2" height="3" fill="#228B22"/>
-          <rect x="8" y="0" width="2" height="3" fill="#228B22"/>
-          <rect x="4" y="4" width="8" height="3" fill="#FF6600"/>
-          <rect x="5" y="7" width="6" height="3" fill="#FF6600"/>
-          <rect x="6" y="10" width="4" height="3" fill="#FF7700"/>
-          <rect x="7" y="13" width="2" height="3" fill="#FF8800"/>
-          <rect x="5" y="5" width="3" height="2" fill="#FF8833" opacity="0.6"/>
-        </g>
-        <!-- [2,3] ONION -->
-        <g transform="translate(62,96)">
-          <rect x="6" y="0" width="4" height="3" fill="#228B22"/>
-          <rect x="4" y="2" width="8" height="2" fill="#CC99FF"/>
-          <rect x="2" y="4" width="12" height="6" fill="#DDB8FF"/>
-          <rect x="0" y="6" width="16" height="5" fill="#CC99FF"/>
-          <rect x="2" y="11" width="12" height="3" fill="#DDB8FF"/>
-          <rect x="4" y="5" width="5" height="3" fill="#EED5FF" opacity="0.5"/>
-        </g>
-        <!-- [3,3] PEPPER -->
-        <g transform="translate(90,96)">
-          <rect x="6" y="0" width="4" height="3" fill="#228B22"/>
-          <rect x="5" y="2" width="6" height="2" fill="#228B22"/>
-          <rect x="3" y="4" width="5" height="10" fill="#FF2200"/>
-          <rect x="8" y="4" width="5" height="10" fill="#DD1100"/>
-          <rect x="2" y="6" width="12" height="6" fill="#FF2200"/>
-          <rect x="3" y="14" width="5" height="3" fill="#FF2200"/>
-          <rect x="8" y="14" width="4" height="3" fill="#DD1100"/>
-          <rect x="4" y="6" width="3" height="4" fill="#FF5533" opacity="0.5"/>
-        </g>
+        <!-- LETTUCE -->
+        <rect x="20" y="54" width="18" height="10" fill="#66BB6A"/>
+        <rect x="18" y="58" width="22" height="8"  fill="#81C784"/>
+        <rect x="54" y="50" width="18" height="10" fill="#66BB6A"/>
+        <rect x="52" y="54" width="22" height="8"  fill="#7BC67E"/>
+        <rect x="84" y="54" width="18" height="10" fill="#81C784"/>
+        <rect x="82" y="58" width="22" height="8"  fill="#66BB6A"/>
+        <rect x="34" y="76" width="18" height="10" fill="#66BB6A"/>
+        <rect x="32" y="80" width="22" height="8"  fill="#7BC67E"/>
+        <rect x="68" y="72" width="18" height="10" fill="#81C784"/>
+        <rect x="66" y="76" width="22" height="8"  fill="#66BB6A"/>
+        <!-- lettuce veins -->
+        <rect x="22" y="58" width="12" height="1"  fill="#A5D6A7" opacity="0.7"/>
+        <rect x="56" y="54" width="12" height="1"  fill="#A5D6A7" opacity="0.7"/>
+        <rect x="86" y="58" width="12" height="1"  fill="#A5D6A7" opacity="0.7"/>
+
+        <!-- TOMATOES -->
+        <rect x="38" y="56" width="10" height="2"  fill="#E53935"/>
+        <rect x="36" y="58" width="14" height="8"  fill="#E53935"/>
+        <rect x="38" y="66" width="10" height="2"  fill="#E53935"/>
+        <rect x="38" y="58" width="4"  height="3"  fill="#FF5252" opacity="0.6"/>
+        <rect x="39" y="54" width="2"  height="3"  fill="#388E3C"/>
+
+        <rect x="70" y="60" width="10" height="2"  fill="#E53935"/>
+        <rect x="68" y="62" width="14" height="8"  fill="#E53935"/>
+        <rect x="70" y="70" width="10" height="2"  fill="#E53935"/>
+        <rect x="70" y="62" width="4"  height="3"  fill="#FF5252" opacity="0.6"/>
+        <rect x="71" y="58" width="2"  height="3"  fill="#388E3C"/>
+
+        <rect x="52" y="80" width="10" height="2"  fill="#E53935"/>
+        <rect x="50" y="82" width="14" height="8"  fill="#E53935"/>
+        <rect x="52" y="90" width="10" height="2"  fill="#E53935"/>
+        <rect x="52" y="82" width="4"  height="3"  fill="#FF5252" opacity="0.6"/>
+        <rect x="53" y="78" width="2"  height="3"  fill="#388E3C"/>
+
+        <!-- CARROTS -->
+        <rect x="22" y="70" width="12" height="6"  fill="#FF8F00"/>
+        <rect x="24" y="72" width="8"  height="4"  fill="#FFA726"/>
+        <rect x="23" y="71" width="4"  height="2"  fill="#FFB74D" opacity="0.6"/>
+
+        <rect x="86" y="68" width="12" height="6"  fill="#FF8F00"/>
+        <rect x="88" y="70" width="8"  height="4"  fill="#FFA726"/>
+        <rect x="87" y="69" width="4"  height="2"  fill="#FFB74D" opacity="0.6"/>
+
+        <rect x="56" y="64" width="12" height="6"  fill="#FF8F00"/>
+        <rect x="58" y="66" width="8"  height="4"  fill="#FFA726"/>
+
+        <!-- PURPLE ONION -->
+        <rect x="26" y="84" width="12" height="2"  fill="#9C27B0"/>
+        <rect x="24" y="86" width="16" height="6"  fill="#AB47BC"/>
+        <rect x="26" y="92" width="12" height="2"  fill="#9C27B0"/>
+        <rect x="28" y="87" width="5"  height="3"  fill="#CE93D8" opacity="0.5"/>
+
+        <rect x="82" y="78" width="12" height="2"  fill="#9C27B0"/>
+        <rect x="80" y="80" width="16" height="6"  fill="#AB47BC"/>
+        <rect x="82" y="86" width="12" height="2"  fill="#9C27B0"/>
+        <rect x="84" y="81" width="5"  height="3"  fill="#CE93D8" opacity="0.5"/>
+
+        <!-- CORN -->
+        <rect x="60" y="88" width="4"  height="4"  fill="#FFD700"/>
+        <rect x="65" y="88" width="4"  height="4"  fill="#FFC200"/>
+        <rect x="70" y="88" width="4"  height="4"  fill="#FFD700"/>
+        <rect x="62" y="93" width="4"  height="4"  fill="#FFC200"/>
+        <rect x="67" y="93" width="4"  height="4"  fill="#FFD700"/>
+
+        <!-- CUCUMBER -->
+        <rect x="36" y="88" width="2"  height="10" fill="#558B2F"/>
+        <rect x="38" y="86" width="6"  height="14" fill="#7CB342"/>
+        <rect x="44" y="88" width="2"  height="10" fill="#558B2F"/>
+        <rect x="39" y="89" width="4"  height="8"  fill="#C5E1A5"/>
+        <rect x="40" y="91" width="2"  height="4"  fill="#F1F8E9"/>
 
         <!-- TITLE BANNER -->
-        <rect x="0" y="136" width="120" height="24" fill="#1A4D1A" opacity="0.92"/>
-        <rect x="0" y="136" width="120" height="2"  fill="#FFD700" opacity="0.4"/>
-        <text x="62" y="153" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="8" fill="#000" opacity="0.4">POINT SALAD</text>
-        <text x="60" y="151" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="8" fill="#FFD700">POINT SALAD</text>
+        <rect x="0"  y="122" width="120" height="38" fill="#1B5E20" opacity="0.95"/>
+        <rect x="0"  y="122" width="120" height="2"  fill="#FFD700"/>
+        <!-- shadow -->
+        <text x="62" y="140" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="9" fill="#000" opacity="0.4">POINT</text>
+        <text x="62" y="154" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="9" fill="#000" opacity="0.4">SALAD</text>
+        <!-- main -->
+        <text x="60" y="138" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="9" fill="#FFD700">POINT</text>
+        <text x="60" y="152" text-anchor="middle" font-family="'Press Start 2P', cursive" font-size="9" fill="#FFD700">SALAD</text>
 
       </svg>
     </div>
@@ -621,7 +538,6 @@
     <p class="text-[7px] sm:text-[8px] text-white bg-deep-charcoal inline-block px-1.5 py-0.5 mt-1.5 sm:mt-2 font-bold">CARD GAME</p>
   </div>
 </a>
-
 
 
 
